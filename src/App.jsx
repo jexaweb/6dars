@@ -5,11 +5,11 @@ import Contact from "./pages/Contact";
 import Shop from "./pages/Shop";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import SingleProduct from "./pages/singleProduct";
+import SingleProduct from "./pages/SingleProduct";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import MainLayout from "./layouts/MainLayout";
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 import { ProtectedRoutes } from "./components/ProtectedRoutes";
 
 function App() {
