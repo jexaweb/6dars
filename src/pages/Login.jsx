@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -22,7 +23,6 @@ function Login() {
               <img src="" alt="" />
             </div>
           </div>
-
           <div className="mb-6">
             <label className="text-2xl block text-gray-700 mb-1">
               Password
@@ -35,19 +35,19 @@ function Login() {
               />
             </div>
           </div>
-
           <button
             type="submit"
             className=" bg-blue-950 text-white pt-2 pr-50 pb-2 pl-50 rounded hover:bg-blue-950 transition"
           >
             Login
           </button>
-          <p className=" flex gap-2 mt-5">
-            <p className="flex"> Dont.have.an.account?</p>
-            <a href="/register" className="text-zinc-800  hover:text-gray-200">
+
+          <div className="flex gap-2 mt-5">
+            <span>Don't have an account?</span>
+            <Link to="/register" className="text-zinc-800 hover:text-gray-200">
               Register
-            </a>
-          </p>
+            </Link>
+          </div>
         </form>
       </div>
     </>
