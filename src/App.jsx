@@ -11,6 +11,11 @@ import "./App.css";
 import MainLayout from "./layouts/MainLayout";
 // import { Routes, Route } from "react-router-dom";
 import { ProtectedRoutes } from "./components/ProtectedRoutes";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
 
 function App() {
   let user = false;
@@ -19,7 +24,7 @@ function App() {
       path: "/",
       element: (
         <ProtectedRoutes user={user}>
-          <MainLayout />,
+          <MainLayout />
         </ProtectedRoutes>
       ),
       children: [
